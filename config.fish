@@ -1,0 +1,7 @@
+alias gull="git pull"
+alias gac="git add .; git commit -m"
+alias gush="git push"
+alias gst="git status"
+alias gch="git checkout"
+alias reloadfish="source ~/.config/fish/config.fish"
+alias editfish="nano ~/.config/fish/config.fish"
