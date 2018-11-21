@@ -1,4 +1,5 @@
 - awscli
+- aws-sam-cli
 - cairo
 - calc
 - cask
