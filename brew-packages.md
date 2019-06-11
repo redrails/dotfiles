@@ -1,53 +1,10 @@
-- awscli
-- aws-sam-cli
-- cairo
-- calc
-- cask
-- emacs
-- fish
-- fontconfig
-- freetype
-- fribidi
-- gdbm
-- gdk-pixbuf
-- gettext
-- ghostscript
-- glib
-- gmp
-- gnutls
-- graphite2
-- harfbuzz
-- htop
-- icu4c
-- imagemagick
-- jpeg
-- libcroco
-- libffi
-- libidn2
-- libpng
-- librsvg
-- libtasn1
-- libtiff
-- libtool
-- libunistring
-- links
-- little-cms2
-- nettle
-- node
-- openjpeg
-- openssl
-- p11-kit
-- pango
-- pcre
-- pcre2
-- pixman
-- python
-- readline
-- speedtest-cli
-- sqlite
-- telnet
-- tree
-- webp
-- wget
-- xz
-- yarn
+adns			gd			icu4c			libheif			ncurses			pinentry		tree
+autoconf		gdbm			ilmbase			libksba			nettle			pkg-config		unbound
+awscli			gettext			imagemagick		libomp			node			python			webp
+calc			glib			jpeg			libpng			npth			rbenv			x265
+cask			gmp			libassuan		libtasn1		openexr			readline		xz
+emacs			gnupg			libde265		libtiff			openjpeg		rename			yvm
+fish			gnutls			libevent		libtool			openssl			ruby-build
+fontconfig		go			libffi			libunistring		p11-kit			shared-mime-info
+freetype		graphviz		libgcrypt		libusb			pcre			speedtest-cli
+fzf			htop			libgpg-error		little-cms2		pcre2			sqlite
