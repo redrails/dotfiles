@@ -1,0 +1,45 @@
+[user]
+	name = name
+	email = email
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = /Users/lonic9/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	co = checkout
+	cob = checkout -b
+	coo = !git fetch && git checkout
+	br = branch
+	brd = branch -d
+	brD = branch -D
+	merged = branch --merged
+	dmerged = "git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+	st = status
+	aa = add -A .
+	cm = commit -m
+	aacm = !git add -A . && git commit -m
+	cp = cherry-pick
+	amend = commit --amend -m
+	dev = !git checkout dev && git pull origin dev
+	staging = !git checkout staging && git pull origin staging
+	master = !git checkout master && git pull origin
+	ps = push
+	pl = pull
+	unstage = reset --soft HEAD^
+	rh = reset --hard
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	f = "!git ls-files | grep -i"
+	gr = grep -Ii
+	la = "!git config -l | grep alias | cut -c 7-"
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	lg = !"git lg1"
+[commit]
+	template = /Users/lonic9/.stCommitMsg
