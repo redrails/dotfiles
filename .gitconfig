@@ -29,7 +29,7 @@
 	dev = !git checkout dev && git pull origin dev
 	staging = !git checkout staging && git pull origin staging
 	master = !git checkout master && git pull origin
-	ps = push
+	ps = push origin HEAD
 	pl = pull
 	unstage = reset --soft HEAD^
 	rh = reset --hard
